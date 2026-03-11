@@ -134,11 +134,11 @@ h1,h2,h3,h4,h5 {
 .btn-phone {
   background: var(--primary);
   color: #fff;
-  border: 2px solid var(--primary);
+  border: 2px solid #fff;
 }
 .btn-phone:hover {
   background: var(--primary-dark);
-  border-color: var(--primary-dark);
+  border-color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(0, 80, 167, 0.35);
 }
@@ -312,15 +312,16 @@ h1,h2,h3,h4,h5 {
   flex-direction: column;
   gap: 0;
   padding-left: 1.5rem;
-  border-left: 2px solid var(--primary);
+  border-left: 2px solid rgba(255,255,255,0.3);
   margin-left: 0.75rem;
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
 .mobile-nav-sub-sub-link {
-  font-size: 0.75rem;
-  padding: 0.35rem 0 !important;
-  color: var(--primary) !important;
+  font-size: 0.8rem;
+  padding: 0.5rem 0 !important;
+  color: #ffffff !important;
+  display: block;
 }
 .nav-phone {
   color: var(--primary) !important;
