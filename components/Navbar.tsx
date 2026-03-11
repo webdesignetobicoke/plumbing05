@@ -357,7 +357,7 @@ export default function Navbar() {
 
             <a href="tel:+14162584068" className="mobile-nav-phone">(416) 258-4068</a>
             <div style={{ marginTop: "1.25rem" }}>
-              <Link href="/contact-us" className="btn btn-primary" style={{ display: "block", textAlign: "center" }} onClick={() => setMobileOpen(false)}>
+              <Link href="/contact-us" className="btn btn-accent" style={{ display: "block", textAlign: "center" }} onClick={() => setMobileOpen(false)}>
                 Schedule Service
               </Link>
             </div>
