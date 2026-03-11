@@ -221,21 +221,6 @@ export default function Navbar() {
               </div>
             </li>
 
-            {/* Locations */}
-            <li className="nav-item">
-              <button>Locations <ChevronDown /></button>
-              <div className="nav-dropdown" style={{ minWidth: 260 }}>
-                {primaryLocations.map(l => (
-                  <Link key={l.href} href={l.href}>{l.label}</Link>
-                ))}
-                <Link href="#" style={{ borderTop: "1px solid rgba(255,255,255,0.1)", marginTop: "0.25rem", paddingTop: "0.5rem" }}>All Locations</Link>
-                <span className="nav-dropdown-label" style={{ marginTop: "0.5rem" }}>Service Areas in Greater Toronto Area:</span>
-                {counties.map(c => (
-                  <Link key={c.href} href={c.href}>{c.label}</Link>
-                ))}
-              </div>
-            </li>
-
             {/* Company */}
             <li className="nav-item">
               <button>Company <ChevronDown /></button>
@@ -407,21 +392,6 @@ export default function Navbar() {
                     )}
                   </div>
                 ))}
-              </div>
-            )}
-
-            {/* Locations accordion */}
-            <button 
-              className="mobile-nav-link" 
-              style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} 
-              onClick={() => toggleSection("locations")}
-              aria-expanded={mobileSection === "locations"}
-            >
-              Locations <ChevronDown />
-            </button>
-            {mobileSection === "locations" && (
-              <div className="mobile-nav-section">
-                {primaryLocations.map(l => <Link key={l.href} href={l.href} className="mobile-nav-sub-link" onClick={() => setMobileOpen(false)}>{l.label}</Link>)}
               </div>
             )}
 

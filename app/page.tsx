@@ -181,7 +181,7 @@ export default function HomePage() {
           </div>
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(8, 1fr)",
+            gridTemplateColumns: "repeat(4, 1fr)",
             gap: "1.5rem",
             alignItems: "center"
           }}>
