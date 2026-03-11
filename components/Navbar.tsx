@@ -158,9 +158,13 @@ const contactLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
+  const [expandedSubService, setExpandedSubService] = useState<string | null>(null);
 
   const toggleSection = (s: string) =>
     setMobileSection(mobileSection === s ? null : s);
+
+  const toggleSubService = (key: string) =>
+    setExpandedSubService(expandedSubService === key ? null : key);
 
   const ChevronDown = () => (
     <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
@@ -293,15 +297,51 @@ export default function Navbar() {
         <div className={`mobile-nav ${mobileOpen ? "open" : ""}`}>
           <div className="mobile-nav-inner">
             {/* Plumbing accordion */}
-            <button className="mobile-nav-link" style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} onClick={() => toggleSection("plumbing")}>
+            <button 
+              className="mobile-nav-link" 
+              style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} 
+              onClick={() => toggleSection("plumbing")}
+              aria-expanded={mobileSection === "plumbing"}
+            >
               Plumbing <ChevronDown />
             </button>
             {mobileSection === "plumbing" && (
               <div className="mobile-nav-section">
                 {plumbingServices.map(s => (
                   <div key={s.href}>
-                    <Link href={s.href} className="mobile-nav-sub-link" onClick={() => setMobileOpen(false)}>{s.label}</Link>
-                    {s.subServices && (
+                    {s.subServices ? (
+                      <button
+                        onClick={() => toggleSubService(s.href)}
+                        style={{
+                          background: "none",
+                          border: "none",
+                          cursor: "pointer",
+                          width: "100%",
+                          textAlign: "left",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          padding: "0.4rem 0 0.4rem 0.75rem",
+                          color: "#ffffff",
+                          fontSize: "0.82rem",
+                          fontFamily: "'Lato', sans-serif"
+                        }}
+                        className="mobile-nav-sub-link-expandable"
+                      >
+                        {s.label}
+                        <span style={{
+                          transform: expandedSubService === s.href ? "rotate(180deg)" : "rotate(0deg)",
+                          transition: "transform 0.2s ease",
+                          display: "inline-flex",
+                          alignItems: "center"
+                        }}>
+                          <ChevronDown />
+                        </span>
+                      </button>
+                    ) : (
+                      <Link href={s.href} className="mobile-nav-sub-link" onClick={() => setMobileOpen(false)}>{s.label}</Link>
+                    )}
+                    {s.subServices && expandedSubService === s.href && (
                       <div className="mobile-nav-sub-section">
                         {s.subServices.map(sub => (
                           <Link key={sub.href} href={sub.href} className="mobile-nav-sub-sub-link" onClick={() => setMobileOpen(false)}>{sub.label}</Link>
@@ -314,15 +354,51 @@ export default function Navbar() {
             )}
 
             {/* HVAC accordion */}
-            <button className="mobile-nav-link" style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} onClick={() => toggleSection("hvac")}>
+            <button 
+              className="mobile-nav-link" 
+              style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} 
+              onClick={() => toggleSection("hvac")}
+              aria-expanded={mobileSection === "hvac"}
+            >
               HVAC <ChevronDown />
             </button>
             {mobileSection === "hvac" && (
               <div className="mobile-nav-section">
                 {hvacServices.map(s => (
                   <div key={s.href}>
-                    <Link href={s.href} className="mobile-nav-sub-link" onClick={() => setMobileOpen(false)}>{s.label}</Link>
-                    {s.subServices && (
+                    {s.subServices ? (
+                      <button
+                        onClick={() => toggleSubService(s.href)}
+                        style={{
+                          background: "none",
+                          border: "none",
+                          cursor: "pointer",
+                          width: "100%",
+                          textAlign: "left",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          padding: "0.4rem 0 0.4rem 0.75rem",
+                          color: "#ffffff",
+                          fontSize: "0.82rem",
+                          fontFamily: "'Lato', sans-serif"
+                        }}
+                        className="mobile-nav-sub-link-expandable"
+                      >
+                        {s.label}
+                        <span style={{
+                          transform: expandedSubService === s.href ? "rotate(180deg)" : "rotate(0deg)",
+                          transition: "transform 0.2s ease",
+                          display: "inline-flex",
+                          alignItems: "center"
+                        }}>
+                          <ChevronDown />
+                        </span>
+                      </button>
+                    ) : (
+                      <Link href={s.href} className="mobile-nav-sub-link" onClick={() => setMobileOpen(false)}>{s.label}</Link>
+                    )}
+                    {s.subServices && expandedSubService === s.href && (
                       <div className="mobile-nav-sub-section">
                         {s.subServices.map(sub => (
                           <Link key={sub.href} href={sub.href} className="mobile-nav-sub-sub-link" onClick={() => setMobileOpen(false)}>{sub.label}</Link>
@@ -335,7 +411,12 @@ export default function Navbar() {
             )}
 
             {/* Locations accordion */}
-            <button className="mobile-nav-link" style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} onClick={() => toggleSection("locations")}>
+            <button 
+              className="mobile-nav-link" 
+              style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} 
+              onClick={() => toggleSection("locations")}
+              aria-expanded={mobileSection === "locations"}
+            >
               Locations <ChevronDown />
             </button>
             {mobileSection === "locations" && (
@@ -344,7 +425,12 @@ export default function Navbar() {
               </div>
             )}
 
-            <button className="mobile-nav-link" style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} onClick={() => toggleSection("company")}>
+            <button 
+              className="mobile-nav-link" 
+              style={{ background: "none", border: "none", cursor: "pointer", width: "100%", textAlign: "left", display: "flex", justifyContent: "space-between" }} 
+              onClick={() => toggleSection("company")}
+              aria-expanded={mobileSection === "company"}
+            >
               Company <ChevronDown />
             </button>
             {mobileSection === "company" && (
