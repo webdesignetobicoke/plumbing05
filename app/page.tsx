@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoldLeafCTA from "@/components/GoldLeafCTA";
 import FAQList from "@/components/FAQList";
+import HeroSection from "@/components/HeroSection";
 
 // ─── DATA ──────────────────────────────────────────────────────────────────────
 const allLocations = [
@@ -140,45 +141,7 @@ export default function HomePage() {
       <Navbar />
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="hero">
-        <div className="hero-bg" style={{ backgroundImage: `url('/hero image.jpg')`, backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }} />
-        <div className="hero-overlay" />
-        <div className="hero-content">
-          <span className="eyebrow animate-up">24/7 Emergency Plumbing Services</span>
-          <h1 className="animate-up animate-up-1">
-            Strong <span>Plumbing</span><br />Greater Toronto Area
-          </h1>
-          <p className="hero-sub animate-up animate-up-2">
-            34+ years of expert draining and plumbing services for residential and commercial needs
-          </p>
-
-          <div className="hero-rating animate-up animate-up-2">
-            <div>
-              <div className="company-name">Strong Plumbing Inc</div>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginTop: "2px" }}>
-                <div className="stars" style={{ color: "#FFD700" }}>★★★★★</div>
-                <span className="score" style={{ color: "#fff", fontWeight: 900, fontSize: "1rem" }}>HOMESTARS Trusted</span>
-                <a href="#reviews" className="reviews" style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.8rem" }}>Check Reviews</a>
-              </div>
-              <div className="service-type">LICENSED MASTER PLUMBERS</div>
-            </div>
-          </div>
-
-          <p className="hero-sub animate-up animate-up-2" style={{ marginBottom: "1.5rem" }}>
-            Strong Plumbing Inc offers expert draining and plumbing services 24/7 at affordable rates. Licensed Master Plumbers bonded and insured. METRO License T95-3952530 / T94-4176905 / Master Plumbing License P#22280.
-          </p>
-
-          <div className="hero-btns animate-up animate-up-3">
-            <a href="/contact-us" className="btn btn-accent">Schedule Service</a>
-            <a href="tel:+14162584068" className="btn btn-outline-white">(416) 258-4068</a>
-          </div>
-        </div>
-        <div className="wave-bottom">
-          <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{ width: "100%", height: "48px" }}>
-            <path d="M0,48 C480,0 960,0 1440,48 L1440,48 L0,48 Z" fill="#ffffff" />
-          </svg>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* ── LOCATION FINDER ──────────────────────────────────────────────── */}
       <section className="section location-finder">
