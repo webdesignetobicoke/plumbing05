@@ -1415,6 +1415,18 @@ h1,h2,h3,h4,h5 {
   .hero-simple-badges .badge {
     flex: 1;
     min-width: calc(50% - 0.5rem);
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .hero-simple-badges .badge strong {
+    font-size: 1rem;
+    min-width: fit-content;
+  }
+  
+  .hero-simple-badges .badge span {
+    font-size: 0.75rem;
   }
   
   /* Location Cards */
@@ -1583,6 +1595,16 @@ h1,h2,h3,h4,h5 {
     font-size: 1rem;
   }
   
+  .hero-simple-badges .badge {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .hero-simple-badges .badge span {
+    font-size: 0.75rem;
+  }
+  
   /* Location Cards */
   .locations-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1690,7 +1712,7 @@ h1,h2,h3,h4,h5 {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff;
+  color: var(--primary);
   padding: 0.5rem;
 }
 .mobile-nav {
@@ -1724,7 +1746,7 @@ h1,h2,h3,h4,h5 {
 .mobile-nav-sub-link {
   display: block;
   padding: 0.4rem 0 0.4rem 0.75rem;
-  color: rgba(255,255,255,0.95);
+  color: #ffffff;
   font-size: 0.82rem;
   transition: color 0.15s;
 }
