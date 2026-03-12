@@ -175,17 +175,48 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-inner">
-          {/* Logo */}
-          <Link href="/" className="nav-logo">
-            <Image src={LOGO} alt="Strong Plumbing Inc" width={3600} height={900} priority />
-          </Link>
+        {/* Purple Header */}
+        <div className="navbar-header">
+          <div className="navbar-header-inner">
+            {/* Logo */}
+            <Link href="/" className="nav-logo">
+              <Image src={LOGO} alt="Strong Plumbing Inc" width={3600} height={900} priority />
+            </Link>
 
+            {/* CTA Buttons */}
+            <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+              <Link href="/contact-us" className="btn btn-accent">Schedule Service</Link>
+              <a href="tel:+14162584068" className="nav-phone">(416) 258-4068</a>
+              {/* Mobile button */}
+              <button
+                className="mobile-menu-btn"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label="Toggle menu"
+                style={{ color: "white" }}
+              >
+                {mobileOpen ? (
+                  <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                  </svg>
+                ) : (
+                  <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Menu */}
+        <div className="navbar-inner">
           {/* Desktop nav */}
           <ul className="nav-links">
+            <li className="nav-item"><Link href="/">Home</Link></li>
+
             {/* Plumbing */}
             <li className="nav-item">
-              <button>Plumbing <ChevronDown /></button>
+              <button>Plumbing Services <ChevronDown /></button>
               <div className="nav-dropdown">
                 {plumbingServices.map(s => (
                   <div key={s.href} className="nav-dropdown-item-wrapper">
@@ -221,66 +252,36 @@ export default function Navbar() {
               </div>
             </li>
 
+            {/* Service Areas */}
+            <li className="nav-item">
+              <button>Service Areas <ChevronDown /></button>
+              <div className="nav-dropdown">
+                {primaryLocations.map(l => (
+                  <Link key={l.href} href={l.href}>{l.label}</Link>
+                ))}
+              </div>
+            </li>
+
             {/* Company */}
             <li className="nav-item">
-              <button>Company <ChevronDown /></button>
+              <button>About Us <ChevronDown /></button>
               <div className="nav-dropdown" style={{ minWidth: 260 }}>
-                {companyLinks.slice(0, 1).map(l => (
-                  <Link key={l.href} href={l.href}>{l.label}</Link>
-                ))}
-                <div className="nav-dropdown-item-wrapper">
-                  <span>Locations</span>
-                  <div className="nav-sub-dropdown">
-                    {primaryLocations.map(l => (
-                      <Link key={l.href} href={l.href}>{l.label}</Link>
-                    ))}
-                  </div>
-                </div>
-                {companyLinks.slice(1).map(l => (
-                  <div key={l.href} className="nav-dropdown-link-item">
-                    <Link href={l.href}>{l.label}</Link>
-                  </div>
-                ))}
-              </div>
-            </li>
-
-            {/* Contact */}
-            <li className="nav-item">
-              <button>Contact <ChevronDown /></button>
-              <div className="nav-dropdown">
-                {contactLinks.map(l => (
+                {companyLinks.map(l => (
                   <Link key={l.href} href={l.href}>{l.label}</Link>
                 ))}
               </div>
             </li>
 
-            <li><a href="tel:+14162584068" className="nav-phone">(416) 258-4068</a></li>
-            <li className="nav-cta">
-              <Link href="/contact-us" className="btn btn-accent">Schedule Service</Link>
-            </li>
+            <li className="nav-item"><Link href="/blog">Blog</Link></li>
+            <li className="nav-item"><Link href="/reviews">Reviews</Link></li>
           </ul>
-
-          {/* Mobile button */}
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? (
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-              </svg>
-            ) : (
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-              </svg>
-            )}
-          </button>
         </div>
 
         {/* Mobile menu */}
         <div className={`mobile-nav ${mobileOpen ? "open" : ""}`}>
           <div className="mobile-nav-inner">
+            <Link href="/" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
+
             {/* Plumbing accordion */}
             <button 
               className="mobile-nav-link" 
@@ -288,7 +289,7 @@ export default function Navbar() {
               onClick={() => toggleSection("plumbing")}
               aria-expanded={mobileSection === "plumbing"}
             >
-              Plumbing <ChevronDown />
+              Plumbing Services <ChevronDown />
             </button>
             {mobileSection === "plumbing" && (
               <div className="mobile-nav-section">
@@ -309,7 +310,7 @@ export default function Navbar() {
                           padding: "0.4rem 0 0.4rem 0.75rem",
                           color: "#ffffff",
                           fontSize: "0.82rem",
-                          fontFamily: "'Lato', sans-serif"
+                          fontFamily: "'Montserrat', sans-serif"
                         }}
                         className="mobile-nav-sub-link-expandable"
                       >
@@ -366,7 +367,7 @@ export default function Navbar() {
                           padding: "0.4rem 0 0.4rem 0.75rem",
                           color: "#ffffff",
                           fontSize: "0.82rem",
-                          fontFamily: "'Lato', sans-serif"
+                          fontFamily: "'Montserrat', sans-serif"
                         }}
                         className="mobile-nav-sub-link-expandable"
                       >
@@ -401,7 +402,7 @@ export default function Navbar() {
               onClick={() => toggleSection("company")}
               aria-expanded={mobileSection === "company"}
             >
-              Company <ChevronDown />
+              About Us <ChevronDown />
             </button>
             {mobileSection === "company" && (
               <div className="mobile-nav-section">
@@ -409,7 +410,8 @@ export default function Navbar() {
               </div>
             )}
 
-            <Link href="/contact-us" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Contact</Link>
+            <Link href="/blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</Link>
+            <Link href="/reviews" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Reviews</Link>
 
             <a href="tel:+14162584068" className="mobile-nav-phone">(416) 258-4068</a>
             <div style={{ marginTop: "1.25rem" }}>

@@ -9,7 +9,7 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="hero-simple-content">
           <h1 className="hero-simple-title animate-up">
-            Expert <span>Plumbing & Drain</span> Services
+            EXPERT PLUMBING & DRAIN SERVICES
           </h1>
           
           <p className="hero-simple-tagline animate-up animate-up-1">
@@ -20,31 +20,48 @@ export default function HeroSection() {
           <ul className="hero-simple-features animate-up animate-up-2">
             <li>
               <span className="check">✓</span>
-              <span>Licensed Master Plumbers</span>
+              <span>Expert Drain Snaking Service to Clear Clogs Fast</span>
             </li>
             <li>
               <span className="check">✓</span>
-              <span>24/7 Emergency Services</span>
+              <span>Our team is certified and trained</span>
             </li>
             <li>
               <span className="check">✓</span>
-              <span>Upfront Pricing</span>
-            </li>
-            <li>
-              <span className="check">✓</span>
-              <span>Same-Day Service</span>
+              <span>All services are guaranteed</span>
             </li>
           </ul>
 
-          {/* Badges */}
-          <div className="hero-simple-badges animate-up animate-up-3">
-            <div className="badge">
-              <strong className="stars-rating">★★★★★</strong>
-              <span>HOMESTARS Trusted</span>
-            </div>
-            <div className="badge">
-              <strong className="badge-plus">A+</strong>
-              <span>BBB Accredited</span>
+          {/* Ratings & Badges */}
+          <div className="hero-simple-ratings animate-up animate-up-3">
+            <div className="ratings-grid">
+              {/* Google Guaranteed */}
+              <div className="rating-badge">
+                <Image
+                  src="/badges/google%20guaranteed%20logo.png"
+                  alt="Google Guaranteed"
+                  width={60}
+                  height={60}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+                <div className="rating-badge-text">
+                  <span className="reviews-count">Over 1,244 repair reviews</span>
+                </div>
+              </div>
+
+              {/* HomeStars */}
+              <div className="rating-badge">
+                <Image
+                  src="/badges/homestars.webp"
+                  alt="HomeStars Verified"
+                  width={60}
+                  height={60}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+                <div className="rating-badge-text">
+                  <span className="verified-text">Verified customer feedback</span>
+                </div>
+              </div>
             </div>
           </div>
 
