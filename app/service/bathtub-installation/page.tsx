@@ -2,7 +2,7 @@ import ServicePage from "@/components/ServicePage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bathtub Installation | Crystal Drain & Plumbing Toronto",
+  title: "Bathtub Installation | Strong Plumbing Inc Toronto",
   description: "Professional bathtub installation for new construction and renovations across Toronto and the GTA.",
 };
 

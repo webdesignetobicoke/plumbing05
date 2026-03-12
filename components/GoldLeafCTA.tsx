@@ -5,7 +5,7 @@ export default function GoldLeafCTA() {
         <span className="gold-star">✦</span>
         <h2>The Gold Leaf Standard</h2>
         <p>
-          Crystal Drain & Plumbing prides itself on its standard of service that exceeds the
+          Strong Plumbing Inc prides itself on its standard of service that exceeds the
           expectations of homeowners across the Greater Toronto Area.
         </p>
         <div className="cta-btns">

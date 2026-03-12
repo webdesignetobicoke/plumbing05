@@ -5,8 +5,8 @@ import GoldLeafCTA from "@/components/GoldLeafCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews & Testimonials | Crystal Drain & Plumbing Toronto",
-  description: "See what Toronto GTA homeowners are saying about Crystal Drain & Plumbing. Read real Google reviews from our satisfied customers.",
+  title: "Customer Reviews & Testimonials | Strong Plumbing Inc Toronto",
+  description: "See what Toronto GTA homeowners are saying about Strong Plumbing Inc. Read real Google reviews from our satisfied customers.",
 };
 
 const photoIds = [2379004, 2128911, 2733918, 2128906, 3719517, 2172282, 2379006, 2128910];
@@ -71,7 +71,7 @@ const reviews = [
         {
           name: "Caleb Hill",
           location: "Toronto, ON",
-          text: "I called many plumbing companies and Crystal Drain & Plumbing was the only one willing to fix my issue same-day. The technician was incredibly nice and transparent throughout the whole process.",
+          text: "I called many plumbing companies and Strong Plumbing Inc was the only one willing to fix my issue same-day. The technician was incredibly nice and transparent throughout the whole process.",
           stars: 5,
           img: `https://images.pexels.com/photos/${photoIds[0]}/pexels-photo-${photoIds[0]}.jpeg?auto=compress&cs=tinysrgb&w=100`,
         },
@@ -99,7 +99,7 @@ const reviews = [
         {
           name: "Nate Purvis",
           location: "Whitby, ON",
-          text: "Crystal Drain is great to work with. Fast, reliable, fair and very professional. Calvin is thorough and does a great job communicating his troubleshooting. I highly recommend using Crystal Drain & Plumbing.",
+          text: "Strong Plumbing Inc is great to work with. Fast, reliable, fair and very professional. Calvin is thorough and does a great job communicating his troubleshooting. I highly recommend using Strong Plumbing Inc.",
           stars: 5,
           img: `https://images.pexels.com/photos/${photoIds[4]}/pexels-photo-${photoIds[4]}.jpeg?auto=compress&cs=tinysrgb&w=100`,
         },
@@ -113,14 +113,14 @@ const reviews = [
         {
           name: "Fely Cotera",
           location: "Burlington, ON",
-          text: "Highly recommend Crystal Drain & Plumbing. Our technician Mr. Travis James was friendly, professional, and very knowledgeable. Will be calling Crystal Drain if we need future plumbing work.",
+          text: "Highly recommend Strong Plumbing Inc. Our technician Mr. Travis James was friendly, professional, and very knowledgeable. Will be calling Strong Plumbing Inc if we need future plumbing work.",
           stars: 5,
           img: `https://images.pexels.com/photos/${photoIds[6]}/pexels-photo-${photoIds[6]}.jpeg?auto=compress&cs=tinysrgb&w=100`,
         },
         {
           name: "Shaundra Britton",
           location: "Richmond Hill, ON",
-          text: "Our first experience with Crystal Drain & Plumbing has been incredible. We had a main water line leak. The office staff was extremely professional and efficient. Jake Reed was outstanding.",
+          text: "Our first experience with Strong Plumbing Inc has been incredible. We had a main water line leak. The office staff was extremely professional and efficient. Jake Reed was outstanding.",
           stars: 5,
           img: `https://images.pexels.com/photos/${photoIds[7]}/pexels-photo-${photoIds[7]}.jpeg?auto=compress&cs=tinysrgb&w=100`,
         },
@@ -134,10 +134,10 @@ export default function ReviewsPage() {
       <Navbar />
       <section style={{ background: "var(--primary)", padding: "3rem 2rem" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Crystal Drain & Plumbing</p>
+          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Strong Plumbing Inc</p>
           <h1 style={{ color: "#fff", fontSize: "clamp(2rem,4vw,3rem)", marginBottom: "1rem" }}>Our Reviews</h1>
           <p style={{ color: "rgba(255,255,255,0.75)", maxWidth: 600, margin: "0 auto" }}>
-            Toggle between our different Google Business Profile locations to see what homeowners near you are saying about Crystal Drain & Plumbing.
+            Toggle between our different Google Business Profile locations to see what homeowners near you are saying about Strong Plumbing Inc.
           </p>
         </div>
       </section>

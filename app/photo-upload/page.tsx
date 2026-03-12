@@ -4,8 +4,8 @@ import GoldLeafCTA from "@/components/GoldLeafCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Upload Your Photo | Crystal Drain & Plumbing Toronto",
-  description: "Share a photo of your plumbing issue with Crystal Drain & Plumbing so we can better prepare for your service appointment.",
+  title: "Upload Your Photo | Strong Plumbing Inc Toronto",
+  description: "Share a photo of your plumbing issue with Strong Plumbing Inc so we can better prepare for your service appointment.",
 };
 
 export default function PhotoUploadPage() {
@@ -14,7 +14,7 @@ export default function PhotoUploadPage() {
       <Navbar />
       <section style={{ background: "var(--primary)", padding: "3rem 2rem", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
-          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Crystal Drain & Plumbing</p>
+          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Strong Plumbing Inc</p>
           <h1 style={{ color: "#fff", fontSize: "clamp(2rem,4vw,3rem)", marginBottom: "1rem" }}>Upload Your Photo</h1>
           <p style={{ color: "rgba(255,255,255,0.75)" }}>Share a photo of your plumbing issue with us so our technicians can arrive fully prepared for your service appointment.</p>
         </div>

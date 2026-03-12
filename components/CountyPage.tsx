@@ -25,7 +25,7 @@ export default function CountyPage({ county, state, tagline, cities }: CountyPag
       {/* Hero */}
       <section style={{ background: "var(--primary)", padding: "3rem 2rem" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Crystal Drain & Plumbing</p>
+          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Strong Plumbing Inc</p>
           <h1 style={{ color: "#fff", fontSize: "clamp(2rem, 4vw, 3rem)", marginBottom: "1rem" }}>{county}</h1>
           <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "1rem", maxWidth: 600, margin: "0 auto 2rem" }}>{tagline}</p>
           <a href="https://crystaldrain.ca" className="btn btn-accent">Schedule Service</a>

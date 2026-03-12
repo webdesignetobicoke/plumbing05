@@ -2,7 +2,7 @@ import CountyPage from "@/components/CountyPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing & HVAC Services Lincoln County | Crystal Drain & Plumbing",
+  title: "Plumbing & HVAC Services Lincoln County | Strong Plumbing Inc",
   description: "Expert plumbing and HVAC services throughout Lincoln County. Crystal Drain & Plumbing serves all cities and communities in Lincoln County, Wyoming.",
 };
 

@@ -5,7 +5,7 @@ import GoldLeafCTA from "@/components/GoldLeafCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gold Leaf Club Maintenance Plan | Crystal Drain & Plumbing",
+  title: "Gold Leaf Club Maintenance Plan | Strong Plumbing Inc",
   description: "Join our Gold Leaf Club for 15% off plumbing services, yearly inspections, water heater maintenance & exclusive benefits. Premium home care for $36.99 monthly.",
 };
 
@@ -22,9 +22,9 @@ const features = [
 
 const whyJoin = [
   { title: "Save 15% On All Services", desc: "Gold Leaf Club members receive 15% off all plumbing services — repairs, installations, and everything in between." },
-  { title: "Friends & Family Discount", desc: "Share the love! Your friends and family members receive a 10% discount when they use Crystal Drain & Plumbing." },
+  { title: "Friends & Family Discount", desc: "Share the love! Your friends and family members receive a 10% discount when they use Strong Plumbing Inc." },
   { title: "Priority Scheduling", desc: "Skip the queue. As a Gold Leaf Club member, you receive priority scheduling for all service calls." },
-  { title: "Annual Inspections Included", desc: "A certified Crystal Drain & Plumbing technician will conduct a yearly inspection of your home's entire plumbing system." },
+  { title: "Annual Inspections Included", desc: "A certified Strong Plumbing Inc technician will conduct a yearly inspection of your home's entire plumbing system." },
   { title: "Water Heater Maintenance", desc: "We'll flush your water heater tank annually to extend its life and maintain peak performance." },
   { title: "Flood Protection", desc: "Annual flood protection check gives you peace of mind that your home is protected from potential plumbing disasters." },
 ];
@@ -37,9 +37,9 @@ export default function GoldLeafClubPage() {
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero-inner">
-            <span className="eyebrow">Crystal Drain & Plumbing</span>
+            <span className="eyebrow">Strong Plumbing Inc</span>
           <h1>Gold Leaf Club</h1>
-          <p>Get 15% off all plumbing services with the Crystal Drain & Plumbing Gold Leaf Club. As a Gold Leaf Club member, your friends and family receive a 10% discount. Start saving your time, and money, by becoming a Gold Leaf Club member today!</p>
+          <p>Get 15% off all plumbing services with the Strong Plumbing Inc Gold Leaf Club. As a Gold Leaf Club member, your friends and family receive a 10% discount. Start saving your time, and money, by becoming a Gold Leaf Club member today!</p>
           <div className="page-hero-btns">
             <a href="tel:+18332697794" className="btn btn-outline-white">(647) 686-4566</a>
             <a href="/contact-us" className="btn btn-accent">Schedule Service</a>

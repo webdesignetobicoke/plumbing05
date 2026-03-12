@@ -2,8 +2,8 @@ import CountyPage from "@/components/CountyPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing & HVAC Services Sweetwater County | Crystal Drain & Plumbing",
-  description: "Expert plumbing and HVAC services throughout Sweetwater County. Crystal Drain & Plumbing serves all cities and communities in Sweetwater County, Wyoming.",
+  title: "Plumbing & HVAC Services Sweetwater County | Strong Plumbing Inc",
+  description: "Expert plumbing and HVAC services throughout Sweetwater County. Strong Plumbing Inc serves all cities and communities in Sweetwater County, Wyoming.",
 };
 
 export default function Page() {
@@ -11,7 +11,7 @@ export default function Page() {
     <CountyPage
       county="Sweetwater County"
       state="Wyoming"
-      tagline="Choose your city in Sweetwater County, and call Crystal Drain & Plumbing."
+      tagline="Choose your city in Sweetwater County, and call Strong Plumbing Inc."
       cities={[
         { name: "Rock Springs, WY", slug: "rock-springs-wy", img: "https://cdn.prod.website-files.com/66fbfa10acc227665751a712/66fc09f7853aa505134208b9_mKzZ_6D9n16sk4BXKmQVAppfkg8Sh7qER_mwaL3kC2M.webp" },
         { name: "Green River, WY", slug: "green-river-wy", img: "https://cdn.prod.website-files.com/66fbfa10acc227665751a712/66fc09c36e4e6e883728a9b6_EfkQ_vwq9ioYKwDlMCRM9HOzXwxrX75_ftCbWTePF44.webp" },

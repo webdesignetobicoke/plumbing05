@@ -189,7 +189,7 @@ export default function ServicePage({ title, heroImg, parentCategory, tagline, s
                 <h4 style={{ fontSize: "0.65rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "1rem" }}>Our Google Business Profiles</h4>
                 {googleProfiles.map(p => (
                   <a key={p.city} href={p.href} target="_blank" rel="noopener noreferrer" style={{ display: "block", padding: "0.75rem", background: "#fff", marginBottom: "0.5rem", transition: "box-shadow 0.15s", boxShadow: "0 1px 4px rgba(0,0,0,0.07)" }}>
-                    <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#000", marginBottom: "0.2rem" }}>Crystal Drain & Plumbing - {p.city}</div>
+                    <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#000", marginBottom: "0.2rem" }}>Strong Plumbing Inc - {p.city}</div>
                     <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
                       <span style={{ color: "var(--accent)", fontSize: "0.8rem" }}>★★★★★</span>
                       <span style={{ fontSize: "0.78rem", fontWeight: 700, color: "#000" }}>{p.rating}</span>

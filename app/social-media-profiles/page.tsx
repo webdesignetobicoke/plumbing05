@@ -6,8 +6,8 @@ import GoldLeafCTA from "@/components/GoldLeafCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Connect With Crystal Drain & Plumbing | Toronto Social Media Profiles",
-  description: "Follow Crystal Drain & Plumbing on social media. Find us on Facebook, Instagram, YouTube, and more.",
+  title: "Connect With Strong Plumbing Inc | Toronto Social Media Profiles",
+  description: "Follow Strong Plumbing Inc on social media. Find us on Facebook, Instagram, YouTube, and more.",
 };
 
 const articles = [
@@ -25,7 +25,7 @@ export default function SocialMediaPage() {
       <Navbar />
       <section style={{ background: "var(--primary)", padding: "4rem 2rem", textAlign: "center" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
-          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>CRYSTAL DRAIN & PLUMBING</p>
+          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>STRONG PLUMBING INC</p>
           <h1 style={{ color: "#fff", fontSize: "clamp(2rem,4vw,3rem)", marginBottom: "0.75rem" }}>Social Media Profiles</h1>
           <p style={{ color: "rgba(255,255,255,0.7)", marginBottom: "0.5rem" }}>The Gold Leaf Standard of Plumbing.</p>
           <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.875rem", marginBottom: "2rem" }}>Greater Toronto Area</p>

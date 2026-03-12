@@ -98,7 +98,7 @@ const reviews = [
 const articles = [
   { title: "Toronto Water Quality: What Every Homeowner Should Know", excerpt: "Understanding Toronto's water system and what it means for your home's plumbing. Learn about water hardness and treatment options for GTA homes.", img: "https://images.pexels.com/photos/11658940/pexels-photo-11658940.jpeg?w=600&h=400&fit=crop", href: "/blog" },
   { title: "Energy Rebates for Toronto Homeowners: Save on Your Plumbing Upgrades", excerpt: "Discover available rebates and incentives in Toronto for upgrading to energy-efficient plumbing and HVAC systems.", img: "https://images.pexels.com/photos/1029635/pexels-photo-1029635.jpeg?w=600&h=400&fit=crop", href: "/blog" },
-  { title: "Winter Pipe Freezing Prevention Guide for Toronto Homes", excerpt: "Expert tips from Crystal Drain & Plumbing on how to prevent burst pipes during Toronto's harsh winters.", img: "https://images.pexels.com/photos/7937299/pexels-photo-7937299.jpeg?w=600&h=400&fit=crop", href: "/blog" },
+  { title: "Winter Pipe Freezing Prevention Guide for Toronto Homes", excerpt: "Expert tips from Strong Plumbing Inc on how to prevent burst pipes during Toronto's harsh winters.", img: "https://images.pexels.com/photos/7937299/pexels-photo-7937299.jpeg?w=600&h=400&fit=crop", href: "/blog" },
   { title: "Drain Cleaning Technology: What's New in Toronto Plumbing", excerpt: "Learn about the latest drain cleaning and plumbing repair technology available to Greater Toronto Area homeowners.", img: "https://images.pexels.com/photos/14953886/pexels-photo-14953886.jpeg?w=600&h=400&fit=crop", href: "/blog" },
   { title: "Tankless Water Heaters: Toronto Homeowner's Guide", excerpt: "Comparing tankless vs traditional water heaters for Toronto homes. Find out which is best for your needs and budget.", img: "https://images.pexels.com/photos/7937300/pexels-photo-7937300.jpeg?w=600&h=400&fit=crop", href: "/blog" },
   { title: "Bathroom Plumbing Renovation Ideas for Toronto Homes", excerpt: "Transform your Toronto bathroom with modern plumbing solutions. Ideas for sink installations, fixtures, and layouts.", img: "https://images.pexels.com/photos/271631/pexels-photo-271631.jpeg?w=600&h=400&fit=crop", href: "/blog" },
@@ -356,9 +356,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "1rem" }}>
             <div>
-              <span className="eyebrow">Crystal Drain & Plumbing</span>
+              <span className="eyebrow">Strong Plumbing Inc</span>
               <h2>Our Latest Articles</h2>
-              <p>Check out Crystal Drain & Plumbing's up-to-date content on all things drain cleaning and plumbing services.</p>
+              <p>Check out Strong Plumbing Inc's up-to-date content on all things drain cleaning and plumbing services.</p>
             </div>
             <Link href="/blog" className="btn btn-outline-secondary" style={{ flexShrink: 0 }}>Our Blog</Link>
           </div>

@@ -2,8 +2,8 @@ import CountyPage from "@/components/CountyPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plumbing & HVAC Services Carbon County | Crystal Drain & Plumbing",
-  description: "Expert plumbing and HVAC services throughout Carbon County. Crystal Drain & Plumbing serves all cities and communities in Carbon County, Wyoming.",
+  title: "Plumbing & HVAC Services Carbon County | Strong Plumbing Inc",
+  description: "Expert plumbing and HVAC services throughout Carbon County. Strong Plumbing Inc serves all cities and communities in Carbon County, Wyoming.",
 };
 
 export default function Page() {

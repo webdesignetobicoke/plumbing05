@@ -6,8 +6,8 @@ import GoldLeafCTA from "@/components/GoldLeafCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Toronto Plumbing & HVAC Tips | Crystal Drain & Plumbing Blog",
-  description: "Expert plumbing and drain cleaning tips for Toronto GTA homeowners from Crystal Drain & Plumbing.",
+  title: "Toronto Plumbing & HVAC Tips | Strong Plumbing Inc Blog",
+  description: "Expert plumbing and drain cleaning tips for Toronto GTA homeowners from Strong Plumbing Inc.",
 };
 
 const featuredPosts = [
@@ -19,7 +19,7 @@ const featuredPosts = [
   },
   {
     title: "Winter Pipe Freezing Prevention Guide for Toronto Homes",
-    excerpt: "Expert tips from Crystal Drain & Plumbing on how to prevent burst pipes during Toronto's harsh winters.",
+    excerpt: "Expert tips from Strong Plumbing Inc on how to prevent burst pipes during Toronto's harsh winters.",
     img: "https://images.pexels.com/photos/7937299/pexels-photo-7937299.jpeg?w=600&h=400&fit=crop",
     href: "#",
   },
@@ -70,8 +70,8 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero-inner">
-          <span className="eyebrow">Crystal Drain & Plumbing</span>
-          <h1>The Crystal Drain & Plumbing Blog</h1>
+          <span className="eyebrow">Strong Plumbing Inc</span>
+          <h1>The Strong Plumbing Inc Blog</h1>
           <p>Expert tips for Toronto GTA homeowners.</p>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function BlogPage() {
       <section className="section" style={{ background: "var(--cream)" }}>
         <div className="container">
           <div className="section-header">
-            <h2>All Crystal Drain & Plumbing Blog Articles</h2>
+            <h2>All Strong Plumbing Inc Blog Articles</h2>
           </div>
           <div className="blog-grid">
             {allPosts.map(post => (

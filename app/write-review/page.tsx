@@ -11,10 +11,10 @@ export default function WriteReviewPage() {
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section style={{ background: "var(--primary)", padding: "3rem 2rem" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Crystal Drain & Plumbing</p>
+          <p style={{ color: "var(--accent)", fontSize: "0.7rem", fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Strong Plumbing Inc</p>
           <h1 style={{ color: "#fff", fontSize: "clamp(2rem,4vw,3rem)", marginBottom: "1rem" }}>Write a Review</h1>
           <p style={{ color: "rgba(255,255,255,0.75)", maxWidth: 600, margin: "0 auto" }}>
-            Share your experience with Crystal Drain & Plumbing and help other Toronto homeowners find trusted plumbing services.
+            Share your experience with Strong Plumbing Inc and help other Toronto homeowners find trusted plumbing services.
           </p>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function WriteReviewPage() {
               <textarea
                 id="review"
                 name="review"
-                placeholder="Tell us about your experience with Crystal Drain & Plumbing. What service did you use? How was the technician? Would you recommend them?"
+                placeholder="Tell us about your experience with Strong Plumbing Inc. What service did you use? How was the technician? Would you recommend them?"
                 required
                 rows={6}
                 style={{
@@ -208,7 +208,7 @@ export default function WriteReviewPage() {
             <div>
               <div style={{ fontSize: "2.5rem", marginBottom: "0.5rem", color: "var(--primary)" }}>✓</div>
               <h3 style={{ fontSize: "1rem", fontWeight: 700, marginBottom: "0.5rem" }}>Share Your Story</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-mid)" }}>Tell your experience with Crystal Drain & Plumbing's service.</p>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-mid)" }}>Tell your experience with Strong Plumbing Inc's service.</p>
             </div>
             <div>
               <div style={{ fontSize: "2.5rem", marginBottom: "0.5rem", color: "var(--primary)" }}>◇</div>

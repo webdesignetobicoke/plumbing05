@@ -45,7 +45,7 @@ export default function LocationPage({
           <div>
             <h1 style={{ color: "#fff", fontSize: "clamp(2rem, 4vw, 3rem)", marginBottom: "1rem" }}>{city}, {state}</h1>
             <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: "1.5rem", fontSize: "1rem", lineHeight: 1.7 }}>{tagline}</p>
-            <p style={{ color: "var(--accent)", fontWeight: 700, fontSize: "0.85rem", marginBottom: "0.5rem", letterSpacing: "0.05em", textTransform: "uppercase" }}>Call Crystal Drain & Plumbing</p>
+            <p style={{ color: "var(--accent)", fontWeight: 700, fontSize: "0.85rem", marginBottom: "0.5rem", letterSpacing: "0.05em", textTransform: "uppercase" }}>Call Strong Plumbing Inc</p>
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.875rem", marginBottom: "1.5rem" }}>Schedule your plumbing service today!</p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <a href={`tel:${phone.replace(/\D/g,'')}`} className="btn" style={{ border: "2px solid rgba(255,255,255,0.3)", background: "transparent", color: "#fff", textAlign: "center" }}>{phone}</a>
